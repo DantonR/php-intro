@@ -1,9 +1,17 @@
 <?php 
+// This is a comment
+# this is another comment
 
-
+/*
+  MULTI
+  LINE
+  COMMENT
+*/
 
 
 ?>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
