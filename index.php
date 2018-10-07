@@ -8,6 +8,14 @@
   COMMENT
 */
 
+/*
+  VARIABLE SYNTAX
+  Variables start with a $
+  They must begin with a letter or an underscore
+*/
+
+  $hello = 'Hello';
+  $_hello = 'Hello with underscore';
 
 ?>
 
