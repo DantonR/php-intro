@@ -29,9 +29,12 @@
   // die('this is from a die')
 
   $list = array('apples', 'bananas', 'pears');
+  
+  $red = '#f06d06'
 
 
-?>
+
+?> 
 
 
 
@@ -67,17 +70,38 @@
   <?php
     $scores = array(24, 70, 42, 98, 89, 100, 28, 64);
   ?>
+
   <h2>The total number of people is <?= count($scores); ?></h2>
+
   <ul>
     <?php foreach($scores as $score): ?>
       <li><?= $score; ?></li>
     <?php endforeach ?>
   </ul>
+
   <?php
     $totalScore = 0;
+    foreach($scores as $score){
+      $totalScore += $score;
+    }
+    $averageScore = $totalScore / count($scores);
   ?>
 
+  <h3>The average score is <?= $averageScore ?></h3>
 
+  <?php if($averageScore > 50): ?>
+    <p style='color: <?= $red; ?>'>The class has passed</p>
+  <?php else: ?>
+    <p>The class has failed</p>
+  <?php endif ?>
+
+  <?php
+
+  ?>
+
+  <p><?= isset($noVar) ?></p>
+
+  
 
 
     
