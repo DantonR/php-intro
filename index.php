@@ -68,6 +68,14 @@
     $scores = array(24, 70, 42, 98, 89, 100, 28, 64);
   ?>
   <h2>The total number of people is <?= count($scores); ?></h2>
+  <ul>
+    <?php foreach($scores as $score): ?>
+      <li><?= $score; ?></li>
+    <?php endforeach ?>
+  </ul>
+  <?php
+    $totalScore = 0;
+  ?>
 
 
 
