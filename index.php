@@ -10,18 +10,26 @@
   $number = 10;
   $boolean = false;
 
-  # array syntax
-  $array = array(10,20,30,40);
+  /*
+    # array syntax
+    $array = array(10,20,30,40);
 
-  # how to view the PHP
-  # echo spits out the data
-  echo 'Hello';
-  echo($_hello);
-  print('Print is the same as echo');
+    # how to view the PHP
+    # echo spits out the data
+    echo 'Hello';
+    echo($_hello);
+    print('Print is the same as echo');
 
+    # tool for debugging, similar to a console log
+    var_dump('This is a var dump');
+    var_dump($array);
+  */
 
-  var_dump('This is a var dump');
-  var_dump($array)
+  # end the code
+  // die('this is from a die')
+
+  $list = array('apples', 'bananas', 'pears');
+
 
 ?>
 
@@ -36,6 +44,34 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>This is running from a PHP file</h1>
+  <h1 class='heading-1 <?php echo 'classname';?>'>This is running from a PHP file</h1>
+  <?php echo '<h2>This is from an echo</h2>';?>
+  <h2><?php echo $hello;?></h2>
+  <h3><?= 'this is from the shorthand' ?></h3>
+
+  <ul>
+    <?php
+      # this will loop over the list and each item looped over will be named listItem
+      foreach($list as $listItem) {
+        echo '<li>'.$listItem.'</li>';
+      }
+    ?>
+  </ul>
+
+  <ul>
+    <?php foreach($list as $listItem): ?>
+      <li><?= $listItem; ?></li>
+    <?php endforeach; ?>
+  </ul>
+
+  <?php
+    $scores = array(24, 70, 42, 98, 89, 100, 28, 64);
+  ?>
+  <h2>The total number of people is <?= count($scores); ?></h2>
+
+
+
+
+    
 </body>
 </html>
