@@ -1,21 +1,25 @@
 <?php 
-// This is a comment
-# this is another comment
-
-/*
-  MULTI
-  LINE
-  COMMENT
-*/
-
-/*
+  /*
   VARIABLE SYNTAX
   Variables start with a $
   They must begin with a letter or an underscore
-*/
+  */
 
   $hello = 'Hello';
   $_hello = 'Hello with underscore';
+  $number = 10;
+  $boolean = false;
+
+  # array syntax
+  $array = array(10,20,30,40);
+
+  # how to view the PHP
+  # echo spits out the data
+  echo 'Hello';
+  echo($_hello);
+  print('Print is the same as echo');
+
+  var_dump();
 
 ?>
 
