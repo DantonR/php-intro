@@ -19,7 +19,9 @@
   echo($_hello);
   print('Print is the same as echo');
 
-  var_dump();
+
+  var_dump('This is a var dump');
+  var_dump($array)
 
 ?>
 
